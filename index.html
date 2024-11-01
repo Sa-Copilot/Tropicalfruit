@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Alert</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- الصورة الرئيسية -->
+<img src="scary.jpg" alt="Scary Image" id="scaryImage">
+
+<!-- النوافذ المنبثقة -->
+<div id="popup1" class="popup">
+    ⚠️ Warning: Your system has been hacked!
+    <button onclick="nextPopup(2)">OK</button>
+</div>
+<div id="popup2" class="popup">
+    ⚠️ Virus is loading...
+    <button onclick="nextPopup(3)">OK</button>
+</div>
+<div id="popup3" class="popup">
+    ⚠️ All your files have been destroyed!
+    <button onclick="nextPopup(4)">OK</button>
+</div>
+<div id="popup4" class="popup">
+    😆 This is just a prank! Don't worry. Ha ha ha!
+    <button onclick="closePopups()">OK</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

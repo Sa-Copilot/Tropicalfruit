@@ -1,0 +1,59 @@
+/* ≈⁄œ«œ«  «·’›Õ… «·—∆Ì”Ì… */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/*  ‰”Ìﬁ «·’Ê—… */
+#scaryImage {
+    max-width: 100%;
+    height: auto;
+}
+
+/*  ‰”Ìﬁ «·‰Ê«›– «·„‰»Àﬁ… */
+.popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    max-width: 90%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 16px;
+    z-index: 2;
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* “— OK */
+.popup button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #0d0d5c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.popup button:hover {
+    background-color: #080846;
+}
+
+/* «· Õ—Ìﬂ ·ŸÂÊ— «·‰Ê«›– */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
