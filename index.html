@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحذير</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="image-container">
+        <img src="scary.jpg" alt="background" class="background-image">
+    </div>
+    <div id="popup1" class="popup">
+        <p>⚠️ Warning: Your system has been hacked!</p>
+        <button onclick="nextPopup(2)">OK</button>
+    </div>
+    <div id="popup2" class="popup">
+        <p>⚠️ Virus is loading...</p>
+        <button onclick="nextPopup(3)">OK</button>
+    </div>
+    <div id="popup3" class="popup">
+        <p>⚠️ All your files have been destroyed!</p>
+        <button onclick="nextPopup(4)">OK</button>
+    </div>
+    <div id="popup4" class="popup">
+        <p>😈 This is just a prank! Don’t worry. Ha ha ha!</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+    <audio id="notificationSound" src="notification.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
